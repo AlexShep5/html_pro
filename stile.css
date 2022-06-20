@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=auto');
 
 * {
     margin: 0;
@@ -23,6 +23,19 @@ body {
     align-items: center;
 }
 
+.headerLeft, .headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.logoImg, .searchImg, .barImg {
+    display: block;
+}
+
+.userImg, .cart {
+    display: none;
+}
+
 .container {
     margin: 0 16px;
 }
@@ -45,8 +58,8 @@ body {
 }
 
 @media (min-width: 768px) {
-    .userImg, .cart {
-        display: inline;
+    .userImg, .cartImg {
+        display: block;
     }
 
     .userImg {
@@ -55,7 +68,7 @@ body {
     }
 
     .cart {
-        display: inline;
+        display: block;
         position: relative;
     }
 }
@@ -174,7 +187,7 @@ body {
         font-size: 12px;
         line-height: 19px;
         right: -9px;
-        top: -19px;
+        top: -8px;
     }
 
     .brandWrap{
@@ -453,17 +466,17 @@ body {
 }
 
 .browseBtn {
+    width: 212px;
     margin: 0 auto 96px;
-    /* outline: 1px solid #FF6A6A; */
-    /* width: 215px; */
-    background: none;
     border: 1px solid #FF6A6A;
     display: block;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
-    padding: 15px 39px;
+    padding: 15px 0;
     text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 @media (min-width: 768px) {
