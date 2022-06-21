@@ -1,0 +1,57 @@
+@import "_variables";
+
+.mainProduct {
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 85px 0;
+    height: 624px;
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA;
+    border-top: 2px solid #EAEAEA;
+
+    @media (min-width: $width_md) {
+        padding: 30px 0;
+    }
+
+    @media (min-width: $width_lg) {
+        padding: 11px 0 42px;
+        height: 777px;
+    }
+
+    .mainImg {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+
+    .arrowLeft, .arrowRight {
+        position: absolute;
+        top: calc(100% / 2 - 47px);
+        z-index: 1;
+        width: 47px;
+        height: 47px;
+        background-color: rgba(42, 42, 42, 0.15);
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+    }
+
+    .arrowLeft {
+        left: 0;
+        background-image: url(#{$productImg}/main_left.svg);
+
+        &:hover {
+            background-image: url(#{$productImg}/main_left_hover.svg);
+        }
+    }
+
+    .arrowRight {
+        right: 0;
+        background-image: url(#{$productImg}/main_right.svg);
+
+        &:hover {
+            background-image: url(#{$productImg}/main_right_hover.svg);
+        }
+    }
+}
