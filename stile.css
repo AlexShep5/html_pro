@@ -32,10 +32,6 @@ body {
     display: block;
 }
 
-.userImg, .cart {
-    display: none;
-}
-
 .container {
     margin: 0 16px;
 }
@@ -397,10 +393,6 @@ body {
     background-color: #f8f8f8;
 }
 
-.featuredItem:hover .featuredImgBlack {
-    display: flex;
-}
-
 .featuredImgWrap {
     position: relative;
 }
@@ -424,6 +416,10 @@ body {
     align-items: center;
 }
 
+.featuredItem:hover .featuredImgBlack {
+    display: flex;
+}
+
 .buttonHover {
     display: flex;
     align-items: center;
@@ -433,6 +429,7 @@ body {
     line-height: 17px;
     color: #FFFFFF;
     padding: 10px 14px;
+    cursor: pointer;
 }
 
 .buttonHover img {
