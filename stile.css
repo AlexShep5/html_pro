@@ -700,7 +700,7 @@ body {
 }
 
 @media (min-width: 768px) {
-    .footer .container {
+    .footer > .container {
         margin: 0 32px;
         display: flex;
         flex-direction: row-reverse;
