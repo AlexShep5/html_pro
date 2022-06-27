@@ -55,17 +55,11 @@
   padding: 24px 0 32px;
 }
 
-.arrivals .menu {
-  height: initial;
-  overflow: initial;
-  z-index: 1;
-}
-
-.arrivalsNav {
+.arrivals .arrivalsNav {
   text-align: center;
 }
 
-.arrivalsNav a, .arrivalsNav span {
+.arrivals .arrivalsNav a, .arrivals .arrivalsNav span {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -73,13 +67,19 @@
   text-decoration: none;
 }
 
-.arrivalsNav a:last-of-type {
+.arrivals .arrivalsNav a:last-of-type {
   font-weight: 700;
   color: #F16D7F;
 }
 
-.arrivalsNav span {
+.arrivals .arrivalsNav span {
   margin: 0 3px;
+}
+
+.arrivals .menu {
+  height: initial;
+  overflow: initial;
+  z-index: 1;
 }
 
 .filters {
@@ -112,10 +112,6 @@
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-}
-
-.filterLeft .hidden {
-  display: none;
 }
 
 .filterLeft img {
@@ -221,6 +217,10 @@
   margin-top: 18px;
 }
 
+.filterLeft .hidden {
+  display: none;
+}
+
 .filterRight {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,10 +231,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.filterRight .hidden {
-  display: none;
 }
 
 .filterRight .filterItem {
@@ -304,6 +300,10 @@
 
 .filterRight div:last-of-type img {
   margin-right: 0;
+}
+
+.filterRight .hidden {
+  display: none;
 }
 
 .featuredItems {
