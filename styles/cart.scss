@@ -6,6 +6,15 @@
 @import "blocks/form";
 @import "blocks/total";
 
+.b-mainTitle {
+    .menu {
+        height: initial;
+        overflow: initial;
+        z-index: 2;
+    }
+}
+
+
 .containerCart {
     margin: 0 9px;
     max-width: 1140px;

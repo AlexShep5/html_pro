@@ -24,8 +24,40 @@
         color: #222222;
     }
 
+    &__radio {
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000;
+        background: none;
+        border: 1px solid #A4A4A4;
+        width: 17px;
+        height: 17px;
+
+
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    &__radioLabel {
+        padding-left: 10px;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000;
+    }
+
     &__input::placeholder {
         color: #b1b1b1;
+    }
+
+    &__comment {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        margin-top: 15px;
     }
 
     &__button {
