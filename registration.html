@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="catalog.css">
     <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="styles/cart.css">
-    <title>Cart</title>
+    <link rel="stylesheet" href="registration.css">
+
+    <title>Registration</title>
 </head>
 
 <body>
+
     <header class="top">
         <div class="header container">
             <div class="headerLeft">
@@ -42,7 +45,7 @@
     <main>
         <div class="b-mainTitle">
             <div class="b-mainTitle__content b-mainTitle__content_pageCart">
-                <div class="b-mainTitle__caption">SHOPPING CART</div>
+                <div class="b-mainTitle__caption">REGISTRATION</div>
             </div>
             <div class="blackout menuHide">
                 <div class="menu">
@@ -84,73 +87,49 @@
             </div>
         </div>
 
-        <div class="containerCart">
-            <div  class="leftWrap">
-                <div class="prodCardsWrap">
-                    <div class="b-prodCard">
-                        <img class="b-prodCard__img" src="img/featured_3.png" alt="photo">
-                        <div class="b-prodCard__info">
-                            <div class="b-prodCard__title">
-                                MANGO  PEOPLE<br>
-                                T-SHIRT
-                            </div>
-                            <div class="b-prodCard__infoItem">
-                                Price: <span class="b-prodCard__infoItem_redText">$300</span>
-                            </div>
-                            <div class="b-prodCard__infoItem">Color: Red</div>
-                            <div class="b-prodCard__infoItem">Size: Xl</div>
-                            <div class="b-prodCard__infoItem">
-                                Quantity:
-                                <input class="b-prodCard__inputQty" type="text" value="2">
-                            </div>
-                        </div>
-                        <div class="b-closeBtn b-prodCard__closeBtn">
-                            <img class="b-closeBtn__img" src="img/cart/close_btn.png" alt="close">
-                        </div>
+        <div class="containerReg">
+            <div class="formWrap">
+                <div class="b-form">
+                    <div class="b-form__title">Your Name</div>
+                    <input class="b-form__input" type="text" name="firstName" placeholder="First Name">
+                    <input class="b-form__input" type="text" name="lastName" placeholder="Last Name">
+                    <div class="genderWrap">
+                        <input class="b-form__radio" name="gender" id="radioMale" type="radio" value="Male">
+                        <label class="b-form__radioLabel" for="radioMale">Male</label>
+                        <input class="b-form__radio" name="gender" id="radioFemale" type="radio" value="Female">
+                        <label class="b-form__radioLabel" for="radioFemale">Female</label>
+                    </div>
+                    <div class="b-form__title">Login details</div>
+                    <input class="b-form__input" type="text" name="email" placeholder="Email">
+                    <input class="b-form__input" type="text" name="password" placeholder="Password">
+                    <div class="b-form__comment">
+                        Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
                     </div>
 
-                    <div class="b-prodCard">
-                        <img class="b-prodCard__img" src="img/featured_7.png" alt="photo">
-                        <div class="b-prodCard__info">
-                            <div class="b-prodCard__title">
-                                MANGO  PEOPLE<br>
-                                T-SHIRT
-                            </div>
-                            <div class="b-prodCard__infoItem">
-                                Price: <span class="b-prodCard__infoItem_redText">$300</span>
-                            </div>
-                            <div class="b-prodCard__infoItem">Color: Red</div>
-                            <div class="b-prodCard__infoItem">Size: Xl</div>
-                            <div class="b-prodCard__infoItem">
-                                Quantity:
-                                <input class="b-prodCard__inputQty" type="text" value="2">
-                            </div>
-                        </div>
-                        <div class="b-closeBtn b-prodCard__closeBtn">
-                            <img class="b-closeBtn__img" src="img/cart/close_btn.svg" alt="close">
-                        </div>
-                    </div>
-                </div>
-                <div class="buttonsWrap">
-                    <a class="b-button" href="#">Clear shopping cart</a>
-                    <a class="b-button" href="#">Continue shopping</a>
+                    <button class="b-button joinButton">JOIN NOW<img src="img/registration/arrow_left.svg" alt="left"></button>
                 </div>
             </div>
-            <div class="rightWrap">
-                <div class="b-form">
-                    <div class="b-form__title">SHIPPING ADRESS</div>
-                    <input class="b-form__input" type="text" placeholder="Bangladesh">
-                    <input class="b-form__input" type="text" placeholder="State">
-                    <input class="b-form__input" type="text" placeholder="Postcode / Zip">
-                    <button class="b-form__button">Get a quote</button>
+            <div class="loyaltyWrap">
+                <div class="loyaltyTitle">
+                    LOYALTY HAS ITS PERKS
                 </div>
-                <div class="totalWrap">
-                    <div class="b-total">
-                        <div class="b-total__subText">SUB TOTAL<span class="b-total__subPrice">$900</span></div>
-                        <div class="b-total__grandText">GRAND TOTAL<span class="b-total__grandPrice">$900</span></div>
-                        <hr class="b-total__sep">
-                        <a class="b-button b-total__button" href="#">PROCEED TO CHECKOUT</a>
-                    </div>
+                <div class="loyaltyText">
+                    Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
+                </div>
+                <div class="loyaltyPlus">
+                    15% off welcome offer
+                </div>
+                <div class="loyaltyPlus">
+                    Free shipping, returns and exchanges on all orders
+                </div>
+                <div class="loyaltyPlus">
+                    $10 off a purchase on your birthday
+                </div>
+                <div class="loyaltyPlus">
+                    Early access to products
+                </div>
+                <div class="loyaltyPlus">
+                    Exclusive offers & rewards
                 </div>
             </div>
         </div>
@@ -197,6 +176,7 @@
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

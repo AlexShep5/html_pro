@@ -1,6 +1,7 @@
 .b-mainTitle {
   background-color: #f8f3f4;
   min-height: 188px;
+  position: relative;
 }
 
 .b-mainTitle__content {
@@ -232,6 +233,29 @@
   color: #222222;
 }
 
+.b-form__radio {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000;
+  background: none;
+  border: 1px solid #A4A4A4;
+  width: 17px;
+  height: 17px;
+}
+
+.b-form__radio:not(:first-child) {
+  margin-left: 20px;
+}
+
+.b-form__radioLabel {
+  padding-left: 10px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000;
+}
+
 .b-form__input::-webkit-input-placeholder {
   color: #b1b1b1;
 }
@@ -246,6 +270,14 @@
 
 .b-form__input::placeholder {
   color: #b1b1b1;
+}
+
+.b-form__comment {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 15px;
 }
 
 .b-form__button {
@@ -324,6 +356,7 @@
 
 .b-total__button {
   width: 100%;
+  max-width: 273px;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -335,6 +368,12 @@
 
 .b-total__button:hover {
   background-color: #E05C6E;
+}
+
+.b-mainTitle .menu {
+  height: initial;
+  overflow: initial;
+  z-index: 2;
 }
 
 .containerCart {
